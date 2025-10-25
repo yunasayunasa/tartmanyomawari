@@ -17,7 +17,7 @@
     {
       "name": "Background",
       "visible": true,
-      "locked": true
+      "locked": false
     }
   ],
   "objects": [
@@ -1674,7 +1674,7 @@
         "lastTap": 0,
         "isYSortable": true,
         "nextWaypoint": "test_a",
-        "overlap_test_b": false,
+        "overlap_test_b": true,
         "dragStartX": 1927.9999999999998,
         "dragStartY": 609.0911424572828,
         "collision_category": 4,
@@ -1690,7 +1690,7 @@
     {
       "name": "rulia_monster_1760153504781",
       "type": "Image",
-      "x": 269,
+      "x": 274,
       "y": 476,
       "depth": 0,
       "scaleX": 1.67,
@@ -1728,7 +1728,7 @@
         }
       },
       "data": {
-        "lastTap": 1760157256085,
+        "lastTap": 0,
         "overlap_yuna_angry_1759846628757": false,
         "overlap_checkpoint": false,
         "overlap_test_a": false,
@@ -1790,13 +1790,14 @@
       "name": "next_arrow_1760157261448",
       "type": "Image",
       "x": 658,
-      "y": 507,
+      "y": 516,
       "depth": 0,
       "scaleX": 0.27,
       "scaleY": 0.27,
       "angle": 0,
       "alpha": 1,
       "layer": "Gameplay",
+      "group": "HIDDEN",
       "events": [
         {
           "id": "event_1760157291453",
@@ -1843,11 +1844,13 @@
         "restitution": 0,
         "collisionFilter": {
           "category": 1,
-          "mask": 4294967295
+          "mask": 1019
         }
       },
       "data": {
-        "lastTap": 1760157280615
+        "lastTap": 1761385424338,
+        "collision_category": 1,
+        "collision_mask": 1019
       }
     }
   ],
