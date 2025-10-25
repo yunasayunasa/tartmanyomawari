@@ -497,24 +497,8 @@
             }
           ],
           "connections": []
-        },
-        {
-          "id": "event_1760081467666",
-          "trigger": "onReady",
-          "nodes": [
-            {
-              "id": "node_1760081481178",
-              "type": "run_scenario",
-              "params": {
-                "file": "overlay_test",
-                "block_input": true
-              },
-              "x": 50,
-              "y": 50
-            }
-          ],
-          "connections": []
         }
+       
       ],
       "texture": "chest",
       "physics": {
