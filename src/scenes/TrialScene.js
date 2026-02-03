@@ -23,7 +23,7 @@ export default class TrialScene extends BaseGameScene {
 
     create() {
         super.create();
-        
+
         // 議論開始イベントの待機
         this.events.on('START_DEBATE', this.startDebate, this);
         this.events.on('PAUSE_TRIAL', this.setPause, this, true);
@@ -57,7 +57,7 @@ export default class TrialScene extends BaseGameScene {
         // GameFlowManager等を通じてゲームオーバーへ
         const systemScene = this.scene.get('SystemScene');
         if (systemScene && systemScene.gameFlowManager) {
-            systemScene.gameFlowManager.emit('GAME_OVER');
+            systemScene.gameFlowManager.handleEvent('GAME_OVER');
         }
     }
 
