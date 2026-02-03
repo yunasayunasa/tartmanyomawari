@@ -6,7 +6,7 @@ import GameOverScene from '../scenes/GameOverScene.js';
 // JumpSceneなど、JSONから呼ばれる可能性のある他のシーンもインポート
 import JumpScene from '../scenes/JumpScene.js';
 import TrialScene from '../scenes/TrialScene.js'; // ★ 追加
-const SCENE_MAP = {
+export const SCENE_MAP = {
     GameScene,
     TitleScene,
     GameOverScene,

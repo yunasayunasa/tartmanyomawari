@@ -28,6 +28,8 @@ export default class TrialScene extends BaseGameScene {
         this.events.on('START_DEBATE', this.startDebate, this);
         this.events.on('PAUSE_TRIAL', this.setPause, this, true);
         this.events.on('RESUME_TRIAL', this.setPause, this, false);
+
+        this.events.emit('scene-ready');
     }
 
     startDebate() {
