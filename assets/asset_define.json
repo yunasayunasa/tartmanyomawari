@@ -83,7 +83,8 @@
         "overlay_test.ks",
         "test.ks",
         "test_main.ks",
-        "test_sub.ks"
+        "test_sub.ks",
+        "trial_test.ks"
       ]
     },
     "scene_layouts": {
