@@ -3,7 +3,6 @@
   "states": {
     "Title": {
       "onEnter": [
-     
         {
           "type": "transitionTo",
           "params": {
@@ -27,8 +26,6 @@
     },
     "InGame": {
       "onEnter": [
-      
-        
         {
           "type": "resumeScene"
         }
@@ -84,6 +81,23 @@
           "action": {
             "type": "closeOverlay"
           }
+        }
+      ]
+    },
+    "Trial": {
+      "onEnter": [
+        {
+          "type": "resumeScene"
+        }
+      ],
+      "transitions": [
+        {
+          "event": "GAME_OVER",
+          "to": "GameOver"
+        },
+        {
+          "event": "TRIAL_CLEAR",
+          "to": "InGame"
         }
       ]
     },
